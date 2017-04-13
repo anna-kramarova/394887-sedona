@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Крамарова](https://up.htmlacademy.ru/htmlcss/17/user/394887).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига](https://htmlacademy.ru/profile/maximfariga).
 
 ---
 
