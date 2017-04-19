@@ -6,138 +6,164 @@
   </head>
   <body>
     <div class="container">
+
       <header class="main-header">
 
-        <div class="header-top">
-          <nav class="main-navigation">
-            <ul>
-              <li><a href="#" title="Информация">Информация</a></li>
-              <li><a href="#" title="Фото и видео">Фото и видео</a></li>
-              <li><a href="#" title="Карта штата">Карта штата</a></li>
-              <li><a href="#" title="Гостиницы">Гостиницы</a></li>
-            </ul>
-          </nav>
-          <div class="header-logo">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Седона">
-          </div>
+        <div class="header-logo">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Седона">
         </div>
 
-        <div class="intro">
-        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
 
       </header>
 
+
       <main>
+
+        <div class="main-intro">
+          <p> Welcome to the gorgeous</p>
+          <p>Sedona</p>
+          <p>"Because the Grand Canyon sucks!"</p>
+        </div> <!-- .main-intro -->
 
         <div class="main-top">
           <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
 
-        <div class="features features-photo">
-          <ul>
-            <li class="feature-item reason-item reason-item-left">
+        <div class="features features-photo-right">
+            <div class="feature-item">
               <h2>Настоящий городок</h2>
-              <p>№1</p>
+              <p class="feature-number">№1</p>
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            </li>
-          </ul>
+            </div>
         </div>
 
         <div class="features features-white">
-          <ul>
 
-            <li class="feature-item">
-              <h2>Жилье</h2>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
+          <div class="feature-item image-item">
+            <h2>Жилье</h2>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
 
-            <li class="feature-item">
-                <h2>Еда</h2>
-                <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-            </li>
+          <div class="feature-item image-item">
+            <h2>Еда</h2>
+            <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+          </div>
 
-            <li class="feature-item">
-              <h2>Сувениры</h2>
-              <p>Не только китайского, но и местного производства!</p>
-            </li>
+          <div class="feature-item image-item">
+            <h2>Сувениры</h2>
+            <p>Не только китайского, но и местного производства!</p>
+          </div>
 
-          </ul>
-        </div>
+        </div> <!-- .features-white -->
 
-        <div class="features features-photo">
-          <ul>
-            <li class="feature-item reason-item reason-item-right">
-              <h2>Там есть мост дьявола</h2>
-              <p>№2</p>
-              <p>Да, по нему можно пройти, если конечно Вы осмелитесь</p>
-            </li>
-          </ul>
+        <div class="features features-photo-left">
+          <div class="feature-item">
+            <h2>Там есть мост дьявола</h2>
+            <p class="feature-number">№2</p>
+            <p>Да, по нему можно пройти, если конечно Вы осмелитесь</p>
+          </div>
         </div>
 
         <div class="features features-grey">
-          <ul>
 
-            <li class="feature-item reason-item">
+            <div class="feature-item">
               <h2>Небольшая площадь</h2>
-              <p>№3</p>
+              <p class="feature-number">№3</p>
               <p>Все достопримечательности находятся очень близко</p>
-            </li>
+            </div>
 
-            <li class="feature-item reason-item">
+            <div class="feature-item">
               <h2>Красивая дорога</h2>
-              <p>№4</p>
+              <p class="feature-number">№4</p>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
+            </div>
 
-            <li class="feature-item reason-item">
+            <div class="feature-item">
               <h2>Мало туристов</h2>
-              <p>№5</p>
+              <p class="feature-number">№5</p>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
+            </div>
 
-          </ul>
-        </div>
+        </div> <!-- .features-grey -->
 
         <div class="hotel-search">
-          <b>Заинтересовались?</b>
+          <p class="hotel-search-title">Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
 
           <button class="btn showform-btn" type="button">Поиск гостиницы в Седоне</button>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <label for="check-in-id">Дата заезда:</label><input id="check-in-id" type="date" name="check-in">
-            <label for="check-out-id">Дата выезда:</label><input id="check-out-id" type="date" name="check-out">
-            <label for="adults-id">Взрослые:</label><input id="adults-id" type="number" name="adults">
-            <label for="children-id">Дети:</label><input id="children-id" type="number" name="children">
+
+            <div class="check-in">
+              <label for="check-in-id">Дата заезда:</label>
+              <input id="check-in-id" type="text" name="check-in" value="24 Апреля 2016">
+              <button class="cal-icon" type="button">Открыть календарь</button>
+            </div>
+
+            <div class="check-out">
+              <label for="check-out-id">Дата выезда:</label>
+              <input id="check-out-id" type="text" name="check-out" value="4 Июля 2016">
+              <button class="cal-icon" type="button">Открыть календарь</button>
+            </div>
+
+            <div class="persons-count">
+
+              <div class="adults-count">
+                <label for="adults-id">Взрослые:</label>
+                <div class="persons-count-input">
+                  <button class="minus-icon" type="button">-</button>
+                  <input id="adults-id" type="number" name="adults" min="0" value="2">
+                  <button class="plus-icon" type="button">+</button>
+                </div>
+              </div> <!--.adults-count -->
+
+              <div class="children-count">
+                <label for="children-id">Дети:</label>
+                <div class="persons-count-input">
+                  <button class="minus-icon" type="button">-</button>
+                  <input id="children-id" type="number" name="children" min="0" value="0">
+                  <button class="plus-icon" type="button">+</button>
+                </div>
+              </div> <!-- .children-count -->
+
+            </div> <!-- .persons-count -->
+
             <button class="btn search-btn" type="submit">Найти</button>
           </form>
 
+        </div> <!-- .hotel-search -->
 
-          <div class="sedona-map">
-          </div>
-
+        <div class="sedona-map">
         </div>
 
       </main>
 
       <footer class="main-footer">
           <div class="footer-hashtag">
-            <b>#visitsedona</b>
+            <a href="#">#visitsedona</a>
           </div>
 
           <div class="footer-social">
-              <a class="social-btn social-btn-tw" href="#" title="Twitter" target="_blank">Twitter</a>
-              <a class="social-btn social-btn-fb" href="#" title="Фейсбук" target="_blank">Фейсбук</a>
-              <a class="social-btn social-btn-ut" href="#" title="Youtube" target="_blank">Youtube</a>
+              <a class="social-btn social-btn-tw" href="#" target="_blank">Twitter</a>
+              <a class="social-btn social-btn-fb" href="#" target="_blank">Фейсбук</a>
+              <a class="social-btn social-btn-ut" href="#" target="_blank">Youtube</a>
           </div>
 
           <div class="footer-copyright">
-            <p>Website by</p>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy" target="_blank">HTML Academy</a>
+            <span>Website by</span>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
           </div>
       </footer>
 
-    </div>
+    </div> <!-- .container -->
 
   </body>
 </html>
