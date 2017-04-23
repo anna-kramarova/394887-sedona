@@ -29,51 +29,49 @@
 
       <main>
 
-        <div class="catalog-hotel-search">
+        <form class="catalog-hotel-search" action="https://echo.htmlacademy.ru" method="get">
 
-          <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="fieldset-left">
+            <legend>Инфраструктура:</legend>
+            <input id="pool-id" type="checkbox" name="pool" checked><label for="pool-id">Бассейн</label>
+            <input id="parking-id" type="checkbox" name="parking"><label for="parking-id">Парковка</label>
+            <input id="wifi-id" type="checkbox" name="wifi"><label for="wifi-id">WI-FI</label>
+          </fieldset>
 
-            <fieldset class="fieldset-left">
-              <legend>Инфраструктура:</legend>
-              <input id="pool-id" type="checkbox" name="pool" checked><label for="pool-id">Бассейн</label>
-              <input id="parking-id" type="checkbox" name="parking"><label for="parking-id">Парковка</label>
-              <input id="wifi-id" type="checkbox" name="wifi"><label for="wifi-id">WI-FI</label>
-            </fieldset>
+          <fieldset class="center">
+            <legend>Тип жилья:</legend>
+            <input id="hotel-id" type="checkbox" name="hotel" checked><label for="hotel-id">Гостиница</label>
+            <input id="motel-id" type="checkbox" name="motel" checked><label for="motel-id">Мотель</label>
+            <input id="apartment-id" type="checkbox" name="apartment" checked><label for="apartment-id">Апартаменты</label>
+          </fieldset>
 
-            <fieldset class="center">
-              <legend>Тип жилья:</legend>
-              <input id="hotel-id" type="checkbox" name="hotel" checked><label for="hotel-id">Гостиница</label>
-              <input id="motel-id" type="checkbox" name="motel" checked><label for="motel-id">Мотель</label>
-              <input id="apartment-id" type="checkbox" name="apartment" checked><label for="apartment-id">Апартаменты</label>
-            </fieldset>
+          <fieldset class="fieldset-right">
+            <legend>Стоимость в сутки (Р):</legend>
 
-            <fieldset class="fieldset-right">
-              <legend>Стоимость в сутки (Р):</legend>
-
-              <div class="dayprice-inputs">
-                <div class="price-from-input">
-                  <label for="price-from-id">От</label>
-                  <input id="price-from-id" type="text" name="price-from" value="0">
-                </div>
-
-                <div class="price-to-input">
-                  <label for="price-to-id">До</label>
-                  <input id="price-to-id" type="text" name="price-to" value="3000">
-                </div>
+            <div class="dayprice-inputs">
+              <div class="price-from-input">
+                <label for="price-from-id">От</label>
+                <input id="price-from-id" type="text" name="price-from" value="0">
               </div>
 
-              <div class="dayprice-bar">
-                <div class="dayprice-bar"></div>
-                <span class="price-from-slider"></span>
-                <span class="price-to-slider"></span>
+              <div class="price-to-input">
+                <label for="price-to-id">До</label>
+                <input id="price-to-id" type="text" name="price-to" value="3000">
               </div>
+            </div>
 
-              <button class="btn filter-btn" type="submit">Показать</button>
+            <div class="dayprice-bar">
+              <div class="dayprice-bar"></div>
+              <span class="price-from-slider"></span>
+              <span class="price-to-slider"></span>
+            </div>
 
-            </fieldset>
+            <button class="btn filter-btn" type="submit">Показать</button>
 
-          </form>
-        </div> <!-- .catalog-hotel-search -->
+          </fieldset>
+
+        </form> <!-- .catalog-hotel-search -->
+
 
         <div class="catalog-sorting">
           <p class="results-count">Найдено:
