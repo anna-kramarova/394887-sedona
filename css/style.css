@@ -1,3 +1,5 @@
+/*-- Общие для двух страниц --*/
+
 body {
   font-family: "PT Sans", "Arial", serif;
   font-size: 14px;
@@ -12,6 +14,12 @@ body {
   margin: 0 auto;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .header-logo {
   width: 140px;
   height: 70px;
@@ -22,6 +30,14 @@ body {
   width: 1056px;
   margin: 0 73px;
 }
+
+.main-footer div {
+  float: left;
+  width: 400px;
+  min-height: 120px;
+}
+
+/*-- Главная страница --*/
 
 .main-intro {
   width: 1200px;
@@ -76,18 +92,7 @@ body {
   height: 473px;
 }
 
-.main-footer div {
-  float: left;
-  width: 400px;
-  min-height: 120px;
-}
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*--------------------------*/
+/*-- Стили задания №3 --*/
 
 p.lead {
   font-family: "PT Sans", "Arial", serif;
@@ -104,3 +109,4 @@ p.lead {
   font-weight: bold;
   color: #000000;
 }
+/*------------------------*/
