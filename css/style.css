@@ -7,7 +7,89 @@ body {
   text-transform: uppercase;
 }
 
-.main-top h1 {
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  width: 140px;
+  height: 70px;
+  display: none;
+}
+
+.main-navigation {
+  width: 1056px;
+  margin: 0 73px;
+}
+
+.main-intro {
+  width: 1200px;
+  height: 508px;
+}
+
+.main-top {
+  width: 576px;
+  margin: 0 auto;
+  padding-top: 61px;
+  padding-bottom: 55px;
+
+}
+
+.feature-item {
+  width: 400px;
+  padding-top: 47px;
+  padding-bottom: 61px;
+}
+
+.icon-item {
+  width: 400px;
+  float: left;
+  padding-top: 167px;
+  padding-bottom: 83px;
+}
+
+.item-right {
+  float: right;
+}
+
+.item-grey {
+  float: left;
+  width: 400px;
+  otline: 1px solid grey;
+  padding-top: 47px;
+  padding-bottom: 67px;
+}
+.hotel-search-intro {
+  width: 576px;
+  margin: 0 auto;
+  padding-top: 54px;
+}
+.hotel-search-form {
+  width: 568px;
+  padding: 55px;
+  margin: 0 auto;
+}
+
+.sedona-map {
+  width: 1200px;
+  height: 473px;
+}
+
+.main-footer div {
+  float: left;
+  width: 400px;
+  min-height: 120px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--------------------------*/
+
+p.lead {
   font-family: "PT Sans", "Arial", serif;
   font-size: 21px;
   line-height: 26px;
