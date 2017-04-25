@@ -27,20 +27,25 @@ body {
 }
 
 .main-navigation {
-  width: 1056px;
-  margin: 0 73px;
+  width: 1055px;
+  padding: 0 6%;
 }
 
+.main-footer {
+  padding: 36px 0;
+  font-size: 0px;
+
+}
 .main-footer div {
-  float: left;
+  display: inline-block;
   width: 400px;
-  min-height: 120px;
+  font-size: 14px;
+  outline: 1px solid red;
 }
 
 /*-- Главная страница --*/
 
 .main-intro {
-  width: 1200px;
   height: 508px;
 }
 
@@ -71,15 +76,15 @@ body {
 
 .item-grey {
   float: left;
-  width: 400px;
-  otline: 1px solid grey;
-  padding-top: 47px;
-  padding-bottom: 67px;
+}
+.hotel-search {
+  padding-top: 54px;
+}
+
 }
 .hotel-search-intro {
   width: 576px;
   margin: 0 auto;
-  padding-top: 54px;
 }
 .hotel-search-form {
   width: 568px;
@@ -91,6 +96,68 @@ body {
   width: 1200px;
   height: 473px;
 }
+/*-- Каталог --*/
+
+.catalog-hotel-search-form {
+  width: 1055px;
+  padding: 0 6%;
+  padding-top: 29px;
+  padding-bottom: 32px;
+}
+
+.fieldset-left,
+.fieldset-center {
+  float: left;
+  width: 240px;
+}
+
+.fieldset-right {
+  float: right;
+  width: 327px;
+}
+
+.catalog-sorting {
+  width: 1055px;
+  padding: 0 6%;
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+
+.results-count {
+  width: 115px;
+  float: left;
+}
+
+.sorting-criterions {
+  width: 415px;
+  float: left;
+}
+
+.sorting-direction {
+  width: 327px;
+  float: right;
+}
+
+.catalog-item {
+  width: 1055px;
+  padding: 0 6%;
+  padding-top: 27px;
+  padding-bottom: 30px
+  outline: 1px solid red;
+}
+
+.item-info-left {
+  width: 527px;
+  float: left;
+  outline: 1px solid blue;
+}
+
+.item-info-right {
+  width: 327px;
+  float: right;
+  outline: 1px solid green;
+}
+
 
 /*-- Стили задания №3 --*/
 
