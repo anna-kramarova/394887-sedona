@@ -7,6 +7,8 @@ body {
   font-weight: normal;
   color: #000000;
   text-transform: uppercase;
+  min-width: 1200px;
+  background-color: rgb(242, 242, 242)
 }
 
 .container {
@@ -28,7 +30,7 @@ body {
 
 .main-navigation {
   width: 1055px;
-  padding: 0 6%;
+  padding: 0 72px;
 }
 
 .main-footer {
@@ -38,9 +40,9 @@ body {
 }
 .main-footer div {
   display: inline-block;
+  vertical-align: middle;
   width: 400px;
   font-size: 14px;
-  outline: 1px solid red;
 }
 
 /*-- Главная страница --*/
@@ -100,7 +102,7 @@ body {
 
 .catalog-hotel-search-form {
   width: 1055px;
-  padding: 0 6%;
+  padding: 0 72px;
   padding-top: 29px;
   padding-bottom: 32px;
 }
@@ -118,18 +120,18 @@ body {
 
 .catalog-sorting {
   width: 1055px;
-  padding: 0 6%;
+  padding: 0 72px;
   padding-top: 32px;
   padding-bottom: 30px;
 }
 
 .results-count {
-  width: 115px;
+  width: 160px;
   float: left;
 }
 
 .sorting-criterions {
-  width: 415px;
+  width: 367px;
   float: left;
 }
 
@@ -140,22 +142,19 @@ body {
 
 .catalog-item {
   width: 1055px;
-  padding: 0 6%;
+  padding: 0 72px;
   padding-top: 27px;
   padding-bottom: 30px
-  outline: 1px solid red;
 }
 
 .item-info-left {
-  width: 527px;
+  width: 727px;
   float: left;
-  outline: 1px solid blue;
 }
 
 .item-info-right {
-  width: 327px;
+  width: 240px;
   float: right;
-  outline: 1px solid green;
 }
 
 
