@@ -1,19 +1,25 @@
 /*-- Общие для двух страниц --*/
 
 body {
-  font-family: "PT Sans", "Arial", serif;
+  min-width: 1200px;
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  color: #000000;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
-  min-width: 1200px;
-  background-color: rgb(242, 242, 242)
+
+  background-color: rgb(242, 242, 242);
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 
 .clearfix::after {
@@ -22,16 +28,81 @@ body {
   clear: both;
 }
 
+/*-------ШАПКА----------*/
+
+.main-header {
+  position: relative;
+  padding: 0 72px;
+
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+
+  outline: 1px solid rgb(4, 108, 249);
+  background-color: rgb(4, 108, 249, 0.2);
+}
+
 .header-logo {
+  position: absolute;
+  left: 530px;
+
   width: 140px;
   height: 70px;
-  display: none;
+
+  outline: 1px solid rgb(249, 121, 4);
+  background-color: rgb(221, 202, 36, 0.2);
 }
 
-.main-navigation {
-  padding: 0 72px;
+.main-navigation ul {
+  margin: 0px;
+  padding: 0px;
+
+  font-size: 0px;
+  list-style: none;
 }
 
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 240px;
+
+  font-size: 14px;
+  line-height: 26px;
+}
+.main-navigation li:nth-child(2) {
+  margin-right: 96px;
+}
+
+.main-navigation li:nth-child(3),
+.main-navigation li:nth-child(4) {
+  text-align: right;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 20px 0px;
+
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+  outline: 1px solid rgb(4, 108, 249);
+  background-color: rgb(4, 108, 249, 0.2);
+}
+
+.main-navigation a:hover {
+  color: rgb(129,179, 210);
+}
+
+.main-navigation a:active {
+  color: rgb(0, 0, 0, 0.3);
+}
+
+a.navigation-active {
+  color: rgb(118, 99, 87);
+}
+
+/*------Футер---------*/
 .main-footer {
   padding: 36px 0;
   font-size: 0px;
@@ -48,6 +119,13 @@ body {
 
 .main-intro {
   height: 508px;
+  background-color: rgb(227, 240, 248);
+  background-image: url("../img/index-background.jpg");
+}
+
+.main-intro h1,
+.main-intro p {
+  font-size: 0px;
 }
 
 .main-top {
@@ -55,7 +133,14 @@ body {
   margin: 0 auto;
   padding-top: 61px;
   padding-bottom: 55px;
+  text-align: center;
+}
 
+.main-top .lead {
+  margin: 0px;
+
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .feature-item {
