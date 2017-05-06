@@ -61,10 +61,13 @@ body {
   vertical-align: top;
 
   width: 240px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 
   font-size: 14px;
   line-height: 26px;
 }
+
 .main-navigation li:nth-child(2) {
   margin-right: 96px;
 }
@@ -76,13 +79,12 @@ body {
 
 .main-navigation a {
   display: block;
-  padding-top: 14px;
-  padding-bottom: 16px;
+  /*padding-top: 14px;
+  padding-bottom: 16px;*/
 
   font-weight: bold;
   color: rgb(0, 0, 0);
   text-decoration: none;
-
 }
 
 .main-navigation a:hover {
@@ -100,21 +102,23 @@ a.navigation-active {
 /*------Футер---------*/
 
 .main-footer {
+  margin-top: -120px;
   padding: 36px 0;
   font-size: 0px;
   color: rgb(0, 0, 0);
-  background-color: rgba(252, 252, 252, 0.1);
-
+  background-color: rgba(254, 254, 254, 0.9);
 }
+
 .main-footer div {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   width: 400px;
-  font-size: 14px;
+  font-size: 0px;
 }
 
  /*Хэштег-блок*/
+
 .footer-hashtag a {
   font-size: 21px;
   line-height: 26px;
@@ -124,72 +128,91 @@ a.navigation-active {
 }
 
 /*Социальный блок*/
-.footer-social {
-  font-size: 0px;
-}
 
-.footer-social a {
+.social-btn {
   display: inline-block;
   vertical-align: middle;
+
   margin-right: 6px;
   width: 46px;
   height: 48px;
-
-  font-size: 0px;
   background-color: rgb(129, 179, 210);
 }
 
-.footer-social a:hover {
+.social-btn::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 20px;
+  height: 19px;
+
+  margin: 14px 13px;
+}
+
+.social-btn-tw::before {
+  background-image: url("../img/spritesheet.png");
+  background-position: -182px -70px;
+  background-repeat: no-repeat;
+}
+
+.social-btn-fb::before {
+  background-image: url("../img/spritesheet.png");
+  background-position: -143px -70px;
+  background-repeat: no-repeat;
+}
+
+.social-btn-ut::before {
+  background-image: url("../img/spritesheet.png");
+  background-position: -223px -70px;
+  background-repeat: no-repeat;
+}
+
+.social-btn:hover {
   background-color: rgb(102, 158, 192);
 }
 
-.footer-social a:active {
+.social-btn:active {
   background-color: rgb(84, 150, 189);
-  opacity: 0.3;  /* здесь проблема */
 }
 
-.social-btn-tw {
-  background-image: url("../img/spritesheet.png");
-  background-position: -170px -57px;
-}
-.social-btn-fb {
-  background-image: url("../img/spritesheet.png");
-  background-position: -133px -57px;
-}
-.social-btn-ut {
-  background-image: url("../img/spritesheet.png");
-  background-position: -212px -57px;
+.social-btn:active::before {
+  opacity: 0.3;
 }
 
 /*Копирайт-блок*/
-.footer-copyright {
-    font-size: 0px;
-}
 
 .footer-copyright span {
+  margin-right: 8px;
   font-size: 14px;
   line-height: 26px;
-
+  vertical-align: middle; /*??*/
 }
 
 .footer-copyright a {
   display: inline-block;
-  width: 115px;
-  height: 40px;
   vertical-align: middle;
+
+  width: 113px;
+  height: 39px;
+
   font-size: 0px;
+
   background-image:  url("../img/spritesheet.png");
-  background-position: -9px -10px;
+  background-position: -10px -9px;
+  background-repeat: no-repeat;
+
 }
 
 .footer-copyright a:hover {
   background-image:  url("../img/spritesheet.png");
-  background-position: -144px -10px;
+  background-position: -10px -69px;
+  background-repeat: no-repeat;
 }
 
 .footer-copyright a:active {
-  background-image:  url("../img/spritesheet.png");
-  background-position: -9px -70px;
+  :  url("../img/spritesheet.png");
+  background-position: -143px -10px;
 }
 
 /*-- Главная страница --*/
@@ -199,6 +222,7 @@ a.navigation-active {
   height: 508px;
   background-color: rgb(227, 240, 248);
   background-image: url("../img/index-background.jpg");
+  background-repeat: no-repeat;
 }
 
 .main-intro h1,
@@ -211,8 +235,8 @@ a.navigation-active {
 .main-top {
   width: 576px;
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 39px;
+  padding-top: 59px;
+  padding-bottom: 38px;
   text-align: center;
 }
 
@@ -233,23 +257,39 @@ a.navigation-active {
 
 .feature-item {
   width: 280px;
-  padding: 46px 60px 42px;;
+  padding: 46px 60px;
   text-align: center;
   background-color: rgb(129, 179, 210);
   color: rgb(255, 255, 255);
 }
 
 .feature-item h2 {
-  margin: 0px;
+  width: 160px;
+  margin: 0px auto;
 
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
-
 }
 
-.feature-item p {
-  margin: 21px 0px;
+.feature-number {
+  margin-top: 24px;
+  margin-bottom: 21px;
+}
+
+.feature-number::before,
+ .feature-number::after {
+  content: "";
+
+  display: inline-block;
+  vertical-align: middle;
+
+  height: 2px;
+  width: 9px;
+
+  margin: 0 5px;
+
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*Фото-преимущества*/
@@ -258,18 +298,21 @@ a.navigation-active {
   float: left;
 }
 
-.features-photo-right::after {
+.features-photo-right::before {
   content: "";
   display: block;
-  float: left;
+  float: right;
   width: 800px;
   height: 256px;
   background-color: rgb(172, 185, 167);
   background-image: url("../img/index-features-photo-right.jpg");
+  background-repeat: no-repeat;
 }
 
 .features-photo-left .item-right {
-  float: left;
+  float: right;
+  width: 308px;
+  padding: 46px;
 }
 
 .features-photo-left::before {
@@ -280,22 +323,64 @@ a.navigation-active {
   height: 256px;
   background-color: rgb(231, 145, 90);
   background-image: url("../img/index-features-photo-left.jpg");
+  background-repeat: no-repeat;
 }
 
-/*Иконочные преимущества - НЕ СДЕЛАНО*/
+/*Иконочные преимущества*/
 
 .icon-item {
-  width: 400px;
+  width: 288px;
   float: left;
-  padding-top: 167px;
-  padding-bottom: 83px;
+
+  padding: 56px;
+  padding-bottom: 69px;
+
+  text-align: center;
+}
+
+.icon-item h2 {
+  margin: 29px auto 23px;
+}
+
+.icon-item::before {
+  content: "";
+  display: block;
+
+  width: 75px;
+  height: 76px;
+
+  margin: 0 auto;
+}
+
+.icon-house::before {
+  background-image: url("../img/spritesheet.png");
+  background-position: -278px -106px;.social-btn
+  background-repeat: no-repeat;
+}
+
+.icon-burger::before {
+  background-image: url("../img/spritesheet.png");
+  background-position: -102px -150px;
+  background-repeat: no-repeat;
+}
+
+.icon-gift::before {
+  background-image: url("../img/spritesheet.png");
+  background-position: -276px -10px;
+  background-repeat: no-repeat;
 }
 
 /*Серые преимущества*/
+
 .item-gray {
   float: left;
   background-color: rgb(238, 238, 238);
   color: rgb(0, 0, 0);
+}
+
+.item-gray .feature-number::before,
+.item-gray .feature-number::after {
+  background-color: rgba(51, 51, 51, 0.5);
 }
 
 .item-gray p {
@@ -305,9 +390,9 @@ a.navigation-active {
 /*Нижняя часть*/
 
 .hotel-search {
-  padding-top: 55px;
+  position: relative;
+  padding-top: 26px;
 }
-
 
 .hotel-search-intro {
   width: 575px;
@@ -317,16 +402,17 @@ a.navigation-active {
 }
 
 .hotel-search-title {
-  margin: 0;
-  margin-bottom: 31px;
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
 }
 
+.first-line {
+  display: block;
+}
+
 .hotel-search-intro p:nth-child(2) {
   margin-bottom: 47px;
-
   line-height: 24px;
 }
 
@@ -345,37 +431,166 @@ a.navigation-active {
 
   border: none;
 
-  cursor: default;
+  cursor: pointer;
 }
 
 .btn-brown {
   background-color: rgb(118, 99, 87);
 }
 
+.btn-blue {
+  background-color: rgb(129, 179, 210);
+}
+
 /*Кнопка открытия формы */
 
 .showform-btn {
-  padding: 30px 138px;
+  padding: 30px 139px;
 
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
-/* ФОРМА - НЕ СДЕЛАНО*/
+/* ФОРМА - НЕ ДОДЕЛАНО*/
+
 
 .hotel-search-form {
-  width: 568px;
+  position: absolute;
+  left: 316px;
+
+  width: 458px;
   padding: 55px;
   margin: 0 auto;
+
+  background-color: rgb(255, 255, 255);
 }
+
+.hotel-search input,
+.hotel-search label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+.hotel-search input {
+  border: none;
+  background-color: rgb(242, 242, 242);
+}
+
+.check-in input,
+.check-out input {
+  width: 322px;
+  margin-bottom: 30px;
+  padding: 6px 12px;
+}
+
+.check-in,
+.check-out {
+  position: relative;
+}
+.cal-icon {
+  position: absolute;
+  left: 428px;
+  top: 8px;
+
+  width: 22px;
+  height: 22px;
+
+  margin: 0px;
+  padding: 0px;
+
+  font-size: 0px;
+
+  background-image: url("../img/spritesheet.png");
+  background-position: -10px -202px;
+  background-repeat: no-repeat;
+}
+
+/*Нижняя часть формы*/
+
+.adults-count {
+  width:225px;
+  float: left;
+}
+
+.children-count {
+  width: 178px;
+  float: right;
+}
+
+.persons-count input {
+  width: 9px;
+  padding: 6px;
+  padding-left: 15px;
+  padding-right: 14px;
+  display: inline-block;
+}
+
+.minus-icon,
+.plus-icon  {
+  width: 38px;
+  height: 38px;
+  font-size: 0px;
+  padding: 0px;
+}
+
+.minus-icon::before,
+.plus-icon::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 12px;
+  height: 12px;
+
+  margin:13px;
+}
+
+.minus-icon::before {
+  background-image: url("../img/spritesheet.png");
+  background-position: -239px -202px;
+  background-repeat: no-repeat;
+}
+
+.plus-icon::before {
+  background-image: url("../img/spritesheet.png");
+  background-position: -335px -202px;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.check-in label {
+  margin-right: 19px;
+}
+
+.check-out label {
+  margin-right: 16px;
+}
+
+
+.search-btn {
+  margin-top: 54px;
+  padding: 15px 196px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
 
 /*КАРТА*/
 
 .sedona-map {
-  height: 473px;
+  height: 593px;
   background-color: rgb(242, 241, 239);
   background-image: url("../img/index-map.jpg");
+  background-repeat: no-repeat;
 }
 
 
@@ -440,87 +655,87 @@ a.navigation-active {
 }
 
 .sprite-allpages-footer-icon-htmlacademy {
-    width: 115px;
-    height: 40px;
+    width: 113px;
+    height: 39px;
     background-position: -10px -10px;
 }
 
 .sprite-allpages-footer-icon-htmlacademy-active {
-    width: 115px;
-    height: 40px;
-    background-position: -145px -10px;
+    width: 113px;
+    height: 39px;
+    background-position: -143px -10px;
 }
 
 .sprite-allpages-footer-icon-htmlacademy-hover {
-    width: 115px;
-    height: 40px;
-    background-position: -10px -70px;
+    width: 113px;
+    height: 39px;
+    background-position: -10px -69px;
 }
 
 .sprite-allpages-footer-social-icon-facebook {
     width: 20px;
-    height: 20px;
-    background-position: -145px -70px;
+    height: 19px;
+    background-position: -143px -69px;
 }
 
 .sprite-allpages-footer-social-icon-twitter {
     width: 20px;
-    height: 20px;
-    background-position: -185px -70px;
+    height: 19px;
+    background-position: -183px -69px;
 }
 
 .sprite-allpages-footer-social-icon-youtube {
     width: 20px;
-    height: 20px;
-    background-position: -225px -70px;
+    height: 19px;
+    background-position: -223px -69px;
 }
 
 .sprite-catalog-hotelclass-star {
-    width: 24px;
-    height: 18px;
-    background-position: -145px -110px;
+    width: 23px;
+    height: 17px;
+    background-position: -143px -108px;
 }
 
 .sprite-catalog-input-checkbox {
     width: 26px;
     height: 22px;
-    background-position: -189px -110px;
+    background-position: -186px -108px;
 }
 
 .sprite-catalog-input-checkbox-checked {
     width: 26px;
     height: 22px;
-    background-position: -235px -110px;
+    background-position: -232px -108px;
 }
 
 .sprite-catalog-input-checkbox-readonly {
     width: 26px;
     height: 22px;
-    background-position: -10px -152px;
+    background-position: -10px -150px;
 }
 
 .sprite-catalog-input-checkbox-readonly-checked {
     width: 26px;
     height: 22px;
-    background-position: -56px -152px;
+    background-position: -56px -150px;
 }
 
 .sprite-index-feature-icon-burger {
-    width: 76px;
+    width: 75px;
     height: 76px;
-    background-position: -102px -152px;
+    background-position: -102px -150px;
 }
 
 .sprite-index-feature-icon-gift {
-    width: 76px;
+    width: 75px;
     height: 76px;
-    background-position: -280px -10px;
+    background-position: -276px -10px;
 }
 
 .sprite-index-feature-icon-house {
-    width: 76px;
+    width: 75px;
     height: 76px;
-    background-position: -281px -106px;
+    background-position: -278px -106px;
 }
 
 .sprite-index-input-icon-calendar {
@@ -538,41 +753,41 @@ a.navigation-active {
 .sprite-index-input-icon-calendar-hover {
     width: 22px;
     height: 22px;
-    background-position: -198px -202px;
+    background-position: -197px -202px;
 }
 
 .sprite-index-input-icon-minus {
     width: 12px;
     height: 12px;
-    background-position: -240px -202px;
+    background-position: -239px -202px;
 }
 
 .sprite-index-input-icon-minus-active {
     width: 12px;
     height: 12px;
-    background-position: -272px -202px;
+    background-position: -271px -202px;
 }
 
 .sprite-index-input-icon-minus-hover {
     width: 12px;
     height: 12px;
-    background-position: -304px -202px;
+    background-position: -303px -202px;
 }
 
 .sprite-index-input-icon-plus {
     width: 12px;
     height: 12px;
-    background-position: -336px -202px;
+    background-position: -335px -202px;
 }
 
 .sprite-index-input-icon-plus-active {
     width: 12px;
     height: 12px;
-    background-position: -240px -234px;
+    background-position: -239px -234px;
 }
 
 .sprite-index-input-icon-plus-hover {
     width: 12px;
     height: 12px;
-    background-position: -272px -234px;
+    background-position: -271px -234px;
 }
