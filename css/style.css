@@ -775,6 +775,10 @@ body {
   cursor: pointer;
 }
 
+.fieldset-center label{
+  padding-left: 41px;
+}
+
 .fieldset-left-group label:nth-child(5) {
   margin-bottom: 25px;
 }
@@ -902,11 +906,11 @@ body {
 }
 
 .range-toggle-min {
-  left: 2px;
+  left: 0;
 }
 
 .range-toggle-max {
-  left: 255px;
+  left: 252px;
 }
 
 .catalog-hotel-search .filter-btn {
