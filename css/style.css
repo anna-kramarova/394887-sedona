@@ -1060,9 +1060,6 @@ body {
   border-top: 1px solid rgb(229, 229, 229);
   background-color: rgb(254, 254, 254);
 }
-.catalog-item:first-child{
-  padding-top: 25px;
-}
 
 .item-info-left {
   width: 727px;
@@ -1135,7 +1132,7 @@ body {
 }
 
 .item-type-price {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .item-btn a:first-child {
