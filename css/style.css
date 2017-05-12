@@ -86,6 +86,7 @@ body {
 }
 
 .main-footer {
+  position: relative;
   padding: 36px 0;
   font-size: 0;
   margin-top: -120px;
@@ -389,7 +390,7 @@ body {
 }
 
 .btn {
-  padding: 4px 17px; /*3px 16px*/
+  padding: 4px 17px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -399,6 +400,7 @@ body {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .btn-brown {
@@ -425,18 +427,18 @@ body {
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  animation-name: bounce;
+  animation-duration: 3s;
 }
 
-.hideform { /*add js*/
+@keyframes bounce {
+  0% { transform: translateY(-395px); }
+  100% { transform: translateY(0); }
+}
+
+.hideform {
   display: none;
-  /*animation-name: bounce;
-  animation-duration: 0.6s;*/
 }
-
-/*@keyframes bounce {
-  0% { transform translateY(0); }
-  100% { transform translateY(-395px); }
-}*/
 
 .hotel-search input,
 .hotel-search label {
