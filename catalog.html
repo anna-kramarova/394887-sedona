@@ -2,22 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона - Каталог гостиниц</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-
       <header class="main-header">
-
         <div class="header-logo">
           <a href="index.html" title="На главную">
             <img src="img/allpages-logo.png" width="140" height="70" alt="Логотип Седона">
           </a>
         </div>
-
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Информация</a></li>
@@ -26,42 +23,33 @@
             <li><a class="navigation-active">Гостиницы</a></li>
           </ul>
         </nav>
-
       </header>
-
       <main>
-
         <form class="catalog-hotel-search clearfix" action="https://echo.htmlacademy.ru" method="get">
-
           <fieldset class="fieldset-left fieldset-left-group">
             <legend>Инфраструктура:</legend>
             <input id="pool-id" class="catalog-form-checkboxes" type="checkbox" name="pool" checked><label for="pool-id">Бассейн</label>
             <input id="parking-id" class="catalog-form-checkboxes" type="checkbox" name="parking"><label for="parking-id">Парковка</label>
             <input id="wifi-id" class="catalog-form-checkboxes" type="checkbox" name="wifi"><label for="wifi-id">Wi-Fi</label>
           </fieldset>
-
           <fieldset class="fieldset-center fieldset-left-group">
             <legend>Тип жилья:</legend>
             <input id="hotel-id" class="catalog-form-checkboxes" type="checkbox" name="hotel" checked><label for="hotel-id">Гостиница</label>
             <input id="motel-id" class="catalog-form-checkboxes" type="checkbox" name="motel" checked><label for="motel-id">Мотель</label>
             <input id="apartment-id" class="catalog-form-checkboxes" type="checkbox" name="apartment" checked><label for="apartment-id">Апартаменты</label>
           </fieldset>
-
           <fieldset class="fieldset-right">
             <legend>Стоимость в сутки (Р):</legend>
-
             <div class="dayprice-inputs">
               <div class="price-from-input">
                 <label for="price-from-id">От</label>
                 <input id="price-from-id" type="text" name="price-from" value="0">
               </div>
-
               <div class="price-to-input">
                 <label for="price-to-id">До</label>
                 <input id="price-to-id" type="text" name="price-to" value="3000">
               </div>
             </div>
-
             <div class="dayprice-bar-block">
               <div class="dayprice-scale">
                 <div class="dayprice-bar"></div>
@@ -69,36 +57,26 @@
               <span class="range-toggle range-toggle-min"></span>
               <span class="range-toggle range-toggle-max"></span>
             </div>
-
             <button class="btn filter-btn" type="submit">Показать</button>
-
           </fieldset>
-
-        </form> <!-- .catalog-hotel-search -->
-
-
+        </form>
         <div class="catalog-sorting clearfix">
           <p class="results-count">Найдено:
             <span>3</span>
           </p>
-
           <div class="sorting-criterions">
             <p>Сортировка:</p>
             <a class="sort-btn sort-btn-price sort-btn-active" href="#">По цене</a>
             <a class="sort-btn sort-btn-type" href="#">По типу</a>
             <a class="sort-btn sort-btn-rating" href="#">По рейтингу</a>
           </div>
-
           <div class="sorting-direction">
             <a class="dir-btn dir-btn-totop" href="#">Сортировка вверх</a>
             <a class="dir-btn dir-btn-tobottom dir-btn-active" href="#">Сортировка вниз</a>
           </div>
         </div>
-
         <div class="catalog-results">
-
           <div class="catalog-item clearfix">
-
             <div class="item-info-left">
               <a  class="item-photo" href="#">
                 <img src="img/catalog-hotelphoto-amararesort.jpg" width="135" height="90" alt="Amara Resort">
@@ -113,27 +91,21 @@
                   <a class="btn item-btn-more btn-blue" href="#">Подробнее</a>
                   <a class="btn item-btn-reservation btn-brown" href="#">Забронировать</a>
                 </div>
-              </div> <!-- .item-description -->
+              </div>
             </div>
-
             <div class="item-info-right">
-
               <div class="item-class">
                 <span>Звезда класса отеля</span>
                 <span>Звезда класса отеля</span>
                 <span>Звезда класса отеля</span>
                 <span>Звезда класса отеля</span>
               </div>
-
               <p class="item-rating">Рейтинг:
                 <span>8,5</span>
               </p>
             </div>
-
           </div>
-
           <div class="catalog-item clearfix">
-
             <div class="item-info-left">
               <a  class="item-photo" href="#">
                 <img src="img/catalog-hotelphoto-desertquail.jpg" width="135" height="90" alt="Desert Quail">
@@ -148,9 +120,8 @@
                   <a class="btn item-btn-more btn-blue" href="#">Подробнее</a>
                   <a class="btn item-btn-reservation btn-brown" href="#">Забронировать</a>
                 </div>
-              </div> <!-- .item-description -->
+              </div>
             </div>
-
             <div class="item-info-right">
               <div class="item-class">
                 <span>Звезда класса отеля</span>
@@ -161,11 +132,8 @@
                 <span>8,9</span>
               </p>
             </div>
-
           </div>
-
           <div class="catalog-item clearfix">
-
             <div class="item-info-left">
               <a  class="item-photo" href="#">
                 <img src="img/catalog-hotelphoto-pocodiablo.jpg" width="135" height="90" alt="Poco Diablo">
@@ -180,9 +148,8 @@
                   <a class="btn item-btn-more btn-blue" href="#">Подробнее</a>
                   <a class="btn item-btn-reservation btn-brown" href="#">Забронировать</a>
                 </div>
-              </div> <!-- .item-description -->
+              </div>
             </div>
-
             <div class="item-info-right">
               <div class="item-class">
               <span>Звезда класса отеля</span>
@@ -192,30 +159,23 @@
                 <span>9,2</span>
               </p>
             </div>
-
-          </div> <!-- .catalog-item -->
-
-        </div> <!-- .catalog-results -->
+          </div>
+        </div>
       </main>
-
       <footer class="main-footer catalog-main-footer">
-          <div class="footer-hashtag">
-            <a href="#">#visitsedona</a>
-          </div>
-
-          <div class="footer-social">
-              <a class="social-btn social-btn-tw" href="#" target="_blank">Twitter</a>
-              <a class="social-btn social-btn-fb" href="#" target="_blank">Фейсбук</a>
-              <a class="social-btn social-btn-ut" href="#" target="_blank">Youtube</a>
-          </div>
-
-          <div class="footer-copyright">
-            <span>Website by</span>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
-          </div>
+        <div class="footer-hashtag">
+          <a href="#">#visitsedona</a>
+        </div>
+        <div class="footer-social">
+          <a class="social-btn social-btn-tw" href="#" target="_blank">Twitter</a>
+          <a class="social-btn social-btn-fb" href="#" target="_blank">Фейсбук</a>
+          <a class="social-btn social-btn-ut" href="#" target="_blank">Youtube</a>
+        </div>
+        <div class="footer-copyright">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
+        </div>
       </footer>
-
     </div>
-
   </body>
 </html>
