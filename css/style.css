@@ -412,11 +412,13 @@ body {
 }
 
 .showform-btn {
+  position: relative;
   width: 568px;
   padding: 30px 20px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  z-index: 1;
 }
 
 .hotel-search-form {
@@ -427,13 +429,21 @@ body {
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-  animation-name: bounce;
-  animation-duration: 1s;
+  animation-name: fadeinup;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
 }
 
-@keyframes bounce {
-  0% { transform: translateY(-395px); }
-  100% { transform: translateY(0); }
+@keyframes fadeinup {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .hideform {
@@ -636,6 +646,12 @@ body {
   background-color: rgb(242, 241, 239);
   background-image: url("../img/index-map.jpg");
   background-repeat: no-repeat;
+}
+
+.google-map {
+  width: 1200px;
+  height: 593px;
+  border: none;
 }
 
 .catalog-hotel-search {
