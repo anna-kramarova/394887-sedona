@@ -118,6 +118,7 @@
           </form>
         </div>
         <div class="sedona-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.1705193275!2d-112.35544194740206!3d34.854443815729866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1494594947626" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </main>
       <footer class="main-footer">
@@ -135,5 +136,23 @@
         </div>
       </footer>
     </div>
+
+    <script>
+
+      var showform = document.querySelector(".showform-btn");
+      var searchform = document.querySelector(".hotel-search-form");
+      var checkininput = searchform.querySelector("input");
+
+      showform.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        searchform.classList.toggle("hideform");
+        console.log("Клик по кнопке выезда формы");
+        checkininput.focus();
+      });
+
+
+
+    </script>
+
   </body>
 </html>
