@@ -428,7 +428,7 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   animation-name: bounce;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 @keyframes bounce {
