@@ -266,27 +266,15 @@ body {
   left: 0px;
 }
 
-.feature-photo::before {
+.feature-photo img {
   content: "";
   display: block;
-  width: 800px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 48%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.features-photo-right .feature-photo::before {
-  background-color: rgb(172, 185, 167);
-  background-image: url("../img/index-features-photo-right.jpg");
-  background-repeat: no-repeat;
-}
-
-.features-photo-left .feature-photo::before {
-  background-color: rgb(231, 145, 90);
-  background-image: url("../img/index-features-photo-left.jpg");
-  background-repeat: no-repeat;
 }
 
 .feature-item {
