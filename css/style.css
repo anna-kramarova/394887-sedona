@@ -49,11 +49,9 @@ body {
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
-
   width: 240px;
   padding-top: 14px;
   padding-bottom: 16px;
-
   font-size: 14px;
   line-height: 26px;
 }
@@ -130,6 +128,7 @@ body {
 .social-btn:first-child {
   margin-left: -2px;
 }
+
 .social-btn:last-child {
   margin-right: 0;
 }
@@ -239,7 +238,55 @@ body {
 
 .features-photo-right,
 .features-photo-left {
-  background-color: rgb(129, 179, 210);
+  position: relative;
+  overflow: hidden;
+}
+
+.features-photo-right {
+  padding-right: 800px;
+}
+
+.features-photo-left {
+  padding-left: 800px;
+}
+
+.feature-photo {
+  margin: 0;
+  position: absolute;
+  width: 800px;
+  height: 100%;
+  top: 0px;
+}
+
+.features-photo-right .feature-photo {
+  right: 0px;
+}
+
+.features-photo-left .feature-photo {
+  left: 0px;
+}
+
+.feature-photo::before {
+  content: "";
+  display: block;
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 48%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.features-photo-right .feature-photo::before {
+  background-color: rgb(172, 185, 167);
+  background-image: url("../img/index-features-photo-right.jpg");
+  background-repeat: no-repeat;
+}
+
+.features-photo-left .feature-photo::before {
+  background-color: rgb(231, 145, 90);
+  background-image: url("../img/index-features-photo-left.jpg");
+  background-repeat: no-repeat;
 }
 
 .feature-item {
@@ -247,6 +294,16 @@ body {
   padding: 46px 60px;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+
+.features-photo-right .item-left,
+.features-photo-left .item-right {
+  background-color: rgb(129, 179, 210);
+}
+
+.features-photo-left .item-right {
+  width: 308px;
+  padding: 46px;
 }
 
 .feature-item h2 {
@@ -271,40 +328,6 @@ body {
   width: 9px;
   margin: 0 5px;
   background-color: rgba(255, 255, 255, 0.5);
-}
-
-.features-photo-right .item-left {
-  float: left;
-  background-color: rgb(129, 179, 210);
-}
-
-.features-photo-right::before {
-  content: "";
-  display: block;
-  float: right;
-  width: 800px;
-  height: 256px;
-  background-color: rgb(172, 185, 167);
-  background-image: url("../img/index-features-photo-right.jpg");
-  background-repeat: no-repeat;
-}
-
-.features-photo-left .item-right {
-  float: right;
-  width: 308px;
-  padding: 46px;
-  background-color: rgb(129, 179, 210);
-}
-
-.features-photo-left::before {
-  content: "";
-  display: block;
-  float: left;
-  width: 800px;
-  height: 256px;
-  background-color: rgb(231, 145, 90);
-  background-image: url("../img/index-features-photo-left.jpg");
-  background-repeat: no-repeat;
 }
 
 .icon-item {
@@ -682,9 +705,11 @@ body {
   padding: 0;
 }
 
-.fieldset-left-group {
+.catalog-hotel-search .fieldset-left-group {
   float: left;
   width: 255px;
+  /*width: 225px;
+  padding-right: 30px;*/
 }
 
 .catalog-hotel-search .fieldset-left {
@@ -754,7 +779,6 @@ body {
   background-position: -10px -150px;
   background-repeat: no-repeat;
 }
-
 
 .catalog-form-checkboxes:disabled:checked + label::before {
   background-image: url("../img/spritesheet.png");

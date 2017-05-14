@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона - Каталог гостиниц</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -28,15 +28,21 @@
         <form class="catalog-hotel-search clearfix" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="fieldset-left fieldset-left-group">
             <legend>Инфраструктура:</legend>
-            <input id="pool-id" class="catalog-form-checkboxes" type="checkbox" name="pool" checked><label for="pool-id">Бассейн</label>
-            <input id="parking-id" class="catalog-form-checkboxes" type="checkbox" name="parking"><label for="parking-id">Парковка</label>
-            <input id="wifi-id" class="catalog-form-checkboxes" type="checkbox" name="wifi"><label for="wifi-id">Wi-Fi</label>
+            <input id="pool-id" class="catalog-form-checkboxes" type="checkbox" name="pool" checked>
+            <label for="pool-id" tabindex="0">Бассейн</label>
+            <input id="parking-id" class="catalog-form-checkboxes" type="checkbox" name="parking">
+            <label for="parking-id" tabindex="0">Парковка</label>
+            <input id="wifi-id" class="catalog-form-checkboxes" type="checkbox" name="wifi">
+            <label for="wifi-id" tabindex="0">Wi-Fi</label>
           </fieldset>
           <fieldset class="fieldset-center fieldset-left-group">
             <legend>Тип жилья:</legend>
-            <input id="hotel-id" class="catalog-form-checkboxes" type="checkbox" name="hotel" checked><label for="hotel-id">Гостиница</label>
-            <input id="motel-id" class="catalog-form-checkboxes" type="checkbox" name="motel" checked><label for="motel-id">Мотель</label>
-            <input id="apartment-id" class="catalog-form-checkboxes" type="checkbox" name="apartment" checked><label for="apartment-id">Апартаменты</label>
+            <input id="hotel-id" class="catalog-form-checkboxes" type="checkbox" name="hotel" checked>
+            <label for="hotel-id" tabindex="0">Гостиница</label>
+            <input id="motel-id" class="catalog-form-checkboxes" type="checkbox" name="motel" checked>
+            <label for="motel-id" tabindex="0">Мотель</label>
+            <input id="apartment-id" class="catalog-form-checkboxes" type="checkbox" name="apartment" checked>
+            <label for="apartment-id" tabindex="0">Апартаменты</label>
           </fieldset>
           <fieldset class="fieldset-right">
             <legend>Стоимость в сутки (Р):</legend>
