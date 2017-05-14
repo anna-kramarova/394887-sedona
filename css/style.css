@@ -93,7 +93,7 @@ body {
 }
 
 .catalog-main-footer {
-  margin-top: 0px;
+  margin-top: 0;
   border-top: 1px solid rgb(229, 229, 229);
   background-color: rgb(254, 254, 254);
 }
@@ -411,7 +411,6 @@ body {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  outline: none;
 }
 
 .btn-brown {
@@ -695,9 +694,8 @@ body {
 
 .catalog-hotel-search .fieldset-left-group {
   float: left;
-  width: 255px;
-  /*width: 225px;
-  padding-right: 30px;*/
+  width: 225px;
+  margin-right: 30px;
 }
 
 .catalog-hotel-search .fieldset-left {
@@ -822,7 +820,6 @@ body {
   margin: 0;
   background: none;
   border: none;
-  outline: none;
 }
 
 .dayprice-bar-block {
@@ -877,7 +874,6 @@ body {
   background-color: transparent;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 2px;
-  outline: none;
 }
 
 .catalog-hotel-search .filter-btn:hover {
@@ -909,7 +905,6 @@ body {
   line-height: 18px;
   font-weight: normal;
 }
-
 
 .sorting-criterions p {
   margin: 0;
